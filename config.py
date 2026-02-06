@@ -39,31 +39,31 @@ US_TO_INDIA_READTHROUGH = {
     "XLI": {
         "sector": "Capital Goods / Industrials",
         "indian_proxies": ["L&T", "Siemens", "ABB India", "Cummins India"],
-        "logic": "US industrial strength signals global capex cycle → Indian capgoods benefit",
+        "logic": "US industrial strength signals global capex cycle -> Indian capgoods benefit",
     },
     "ITA": {
         "sector": "Defense",
         "indian_proxies": ["HAL", "BEL", "Bharat Dynamics", "Data Patterns"],
-        "logic": "US defense spending trends → allied defense ecosystem tailwinds",
+        "logic": "US defense spending trends -> allied defense ecosystem tailwinds",
     },
     "SOXX": {
         "sector": "Electronics / Cap Goods",
         "indian_proxies": ["Dixon Tech", "Kaynes Tech", "Tata Elxsi"],
-        "logic": "Semi cycle leads electronics capex → Indian EMS/design plays",
+        "logic": "Semi cycle leads electronics capex -> Indian EMS/design plays",
     },
     "XLB": {
         "sector": "Metals / Chemicals",
         "indian_proxies": ["Tata Steel", "Hindalco", "SRF", "Navin Fluorine"],
-        "logic": "US materials demand → global commodity pricing → Indian margin impact",
+        "logic": "US materials demand -> global commodity pricing -> Indian margin impact",
     },
     "XLE": {
         "sector": "Energy",
         "indian_proxies": ["ONGC", "Oil India", "GAIL", "Reliance"],
-        "logic": "US energy sector direction → crude/gas pricing → Indian energy cos",
+        "logic": "US energy sector direction -> crude/gas pricing -> Indian energy cos",
     },
 }
 
-# --- ADR Mappings (US ADR ticker → NSE ticker) ---
+# --- ADR Mappings (US ADR ticker -> NSE ticker) ---
 ADR_MAPPINGS = {
     "INFY": {"nse": "INFY.NS", "name": "Infosys"},
     "WIT": {"nse": "WIPRO.NS", "name": "Wipro"},

@@ -14,7 +14,7 @@ from rich.rule import Rule
 from rich.columns import Columns
 
 
-console = Console(width=120)
+console = Console(width=120, force_terminal=True, legacy_windows=True)
 
 
 def _sign(val):
@@ -81,7 +81,7 @@ def render_us_markets(data):
 
     # Read-throughs
     if data["readthroughs"]:
-        rt_table = Table(title="US → India Read-Throughs (Cyclicals Focus)", show_header=True, header_style="bold")
+        rt_table = Table(title="US -> India Read-Throughs (Cyclicals Focus)", show_header=True, header_style="bold")
         rt_table.add_column("US ETF", style="cyan")
         rt_table.add_column("Move", justify="right")
         rt_table.add_column("Signal")
@@ -133,8 +133,8 @@ def render_adr_spreads(data):
         table.add_row(
             s["name"],
             f"${s['adr_close_usd']}",
-            f"₹{s['adr_inr_equiv']}",
-            f"₹{s['nse_close_inr']}",
+            f"INR {s['adr_inr_equiv']}",
+            f"INR {s['nse_close_inr']}",
             f"[{color}]{_sign(s['spread_pct'])}%[/{color}]",
             s["direction"],
             flag,
@@ -145,7 +145,7 @@ def render_adr_spreads(data):
 def render_commodities(data):
     """Render commodities section."""
     console.print()
-    console.print(Rule("[bold yellow]3. COMMODITIES → INDIA MARGIN MAP[/bold yellow]"))
+    console.print(Rule("[bold yellow]3. COMMODITIES -> INDIA MARGIN MAP[/bold yellow]"))
     console.print()
 
     # Price table
@@ -192,7 +192,7 @@ def render_commodities(data):
 def render_commentary(data):
     """Render corporate commentary section."""
     console.print()
-    console.print(Rule("[bold yellow]4. GLOBAL CORPORATE COMMENTARY → INDIA[/bold yellow]"))
+    console.print(Rule("[bold yellow]4. GLOBAL CORPORATE COMMENTARY -> INDIA[/bold yellow]"))
     console.print()
 
     earnings = data["earnings_scan"]
@@ -345,11 +345,11 @@ def render_risk_map(us_data, commodity_data, fo_data):
 
     # Net bias
     if risk_on_count > risk_off_count + 1:
-        net_bias = "[bold green]RISK-ON[/bold green] — Favor long cyclicals, especially where US read-through is positive"
+        net_bias = "[bold green]RISK-ON[/bold green] - Favor long cyclicals, especially where US read-through is positive"
     elif risk_off_count > risk_on_count + 1:
-        net_bias = "[bold red]RISK-OFF[/bold red] — Reduce cyclical exposure, watch for gap-down hedges"
+        net_bias = "[bold red]RISK-OFF[/bold red] - Reduce cyclical exposure, watch for gap-down hedges"
     else:
-        net_bias = "[bold yellow]NEUTRAL / MIXED[/bold yellow] — Selective; favor stocks with specific catalysts"
+        net_bias = "[bold yellow]NEUTRAL / MIXED[/bold yellow] - Selective; favor stocks with specific catalysts"
 
     console.print(Panel(
         f"  [bold]NET MORNING BIAS:[/bold] {net_bias}\n\n"
@@ -396,7 +396,7 @@ def generate_markdown_report(us_data, adr_data, commodity_data, commentary_data,
     lines.append("")
 
     if us_data["readthroughs"]:
-        lines.append("### US → India Read-Throughs")
+        lines.append("### US -> India Read-Throughs")
         lines.append("")
         lines.append("| US ETF | Move | Signal | Indian Sector | Proxies |")
         lines.append("|--------|-----:|--------|---------------|---------|")
@@ -417,13 +417,13 @@ def generate_markdown_report(us_data, adr_data, commodity_data, commentary_data,
             lines.append("| Stock | ADR (USD) | ADR INR Equiv | NSE Close | Spread % | Direction |")
             lines.append("|-------|----------:|--------------:|----------:|---------:|-----------|")
             for s in adr_data["spreads"]:
-                lines.append(f"| {s['name']} | ${s['adr_close_usd']} | ₹{s['adr_inr_equiv']} | ₹{s['nse_close_inr']} | {_sign(s['spread_pct'])}% | {s['direction']} |")
+                lines.append(f"| {s['name']} | ${s['adr_close_usd']} | INR {s['adr_inr_equiv']} | INR {s['nse_close_inr']} | {_sign(s['spread_pct'])}% | {s['direction']} |")
     lines.append("")
     lines.append("---")
     lines.append("")
 
     # Commodities
-    lines.append("## 3. Commodities → India Margin Map")
+    lines.append("## 3. Commodities -> India Margin Map")
     lines.append("")
     lines.append("| Commodity | Price | Change % |")
     lines.append("|-----------|------:|---------:|")

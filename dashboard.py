@@ -28,7 +28,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Global Handover Dashboard — Indian Cyclicals-First Pre-Market Briefing"
+        description="Global Handover Dashboard - Indian Cyclicals-First Pre-Market Briefing"
     )
     parser.add_argument(
         "--markdown", "-m",
@@ -215,31 +215,31 @@ def main():
         console.print("\n  [dim]Fetching live market data...[/dim]\n")
 
         if sections_to_run in ("all", "us"):
-            console.print("  [dim]→ US Markets & Factor ETFs...[/dim]")
+            console.print("  [dim]>> US Markets & Factor ETFs...[/dim]")
             us_data = get_us_markets_section()
         else:
             us_data = load_sample_data()["us"]
 
         if sections_to_run in ("all", "adr"):
-            console.print("  [dim]→ ADR Spreads & FX...[/dim]")
+            console.print("  [dim]>> ADR Spreads & FX...[/dim]")
             adr_data = get_adr_section()
         else:
             adr_data = load_sample_data()["adr"]
 
         if sections_to_run in ("all", "commodities"):
-            console.print("  [dim]→ Commodities...[/dim]")
+            console.print("  [dim]>> Commodities...[/dim]")
             commodity_data = get_commodities_section()
         else:
             commodity_data = load_sample_data()["commodities"]
 
         if sections_to_run in ("all", "commentary"):
-            console.print("  [dim]→ Corporate Commentary...[/dim]")
+            console.print("  [dim]>> Corporate Commentary...[/dim]")
             commentary_data = get_commentary_section()
         else:
             commentary_data = load_sample_data()["commentary"]
 
         if sections_to_run in ("all", "fo"):
-            console.print("  [dim]→ NSE F&O Scan...[/dim]")
+            console.print("  [dim]>> NSE F&O Scan...[/dim]")
             fo_data = get_fo_section()
         else:
             fo_data = load_sample_data()["fo"]
