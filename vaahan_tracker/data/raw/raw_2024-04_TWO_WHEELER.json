@@ -1,0 +1,16 @@
+[
+  {
+    "month": "2024-04",
+    "oem_raw": "HERO MOTOCORP LTD",
+    "category_raw": "TWO WHEELER",
+    "units": 50000,
+    "fuel_type": "PETROL"
+  },
+  {
+    "month": "2024-04",
+    "oem_raw": "OLA ELECTRIC",
+    "category_raw": "TWO WHEELER",
+    "units": 8000,
+    "fuel_type": "ELECTRIC(BOV)"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "month": "2023-04",
+    "oem_raw": "MARUTI SUZUKI INDIA LTD",
+    "category_raw": "FOUR WHEELER (PASSENGER)",
+    "units": 14000,
+    "fuel_type": "PETROL"
+  },
+  {
+    "month": "2023-04",
+    "oem_raw": "TATA MOTORS LTD",
+    "category_raw": "FOUR WHEELER (PASSENGER)",
+    "units": 11000,
+    "fuel_type": "PETROL"
+  }
+]

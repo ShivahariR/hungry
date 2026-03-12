@@ -1,0 +1,17 @@
+month,oem,oem_normalized,ticker,listed,category,fuel_type,is_ev,is_hybrid,units
+2023-04,MARUTI SUZUKI INDIA LTD,Maruti Suzuki,MARUTI,True,Passenger Vehicles,PETROL,False,False,14000
+2023-04,TATA MOTORS LTD,Tata Motors,TATAMOTORS,True,Passenger Vehicles,PETROL,False,False,11000
+2023-05,MARUTI SUZUKI INDIA LTD,Maruti Suzuki,MARUTI,True,Passenger Vehicles,PETROL,False,False,14500
+2023-05,TATA MOTORS LTD,Tata Motors,TATAMOTORS,True,Passenger Vehicles,PETROL,False,False,11500
+2024-04,HYUNDAI MOTOR INDIA LTD,Hyundai,HYUNDAI,True,Passenger Vehicles,PETROL,False,False,10000
+2024-04,MARUTI SUZUKI INDIA LTD,Maruti Suzuki,MARUTI,True,Passenger Vehicles,PETROL,False,False,15000
+2024-04,TATA MOTORS LTD,Tata Motors,TATAMOTORS,True,Passenger Vehicles,PETROL,False,False,12000
+2024-04,TATA MOTORS LTD,Tata Motors,TATAMOTORS,True,Passenger Vehicles,ELECTRIC(BOV),True,False,3000
+2024-04,HERO MOTOCORP LTD,Hero MotoCorp,HEROMOTOCO,True,Two Wheelers,PETROL,False,False,50000
+2024-04,OLA ELECTRIC,Ola Electric,OLAELEC,True,Two Wheelers,ELECTRIC(BOV),True,False,8000
+2024-05,HYUNDAI MOTOR INDIA LTD,Hyundai,HYUNDAI,True,Passenger Vehicles,DIESEL,False,False,10500
+2024-05,MARUTI SUZUKI INDIA LTD,Maruti Suzuki,MARUTI,True,Passenger Vehicles,PETROL,False,False,16000
+2024-05,TATA MOTORS LTD,Tata Motors,TATAMOTORS,True,Passenger Vehicles,PETROL,False,False,13000
+2024-05,TATA MOTORS LTD,Tata Motors,TATAMOTORS,True,Passenger Vehicles,ELECTRIC(BOV),True,False,3500
+2024-05,HERO MOTOCORP LTD,Hero MotoCorp,HEROMOTOCO,True,Two Wheelers,PETROL,False,False,52000
+2024-05,OLA ELECTRIC,Ola Electric,OLAELEC,True,Two Wheelers,ELECTRIC(BOV),True,False,9000
