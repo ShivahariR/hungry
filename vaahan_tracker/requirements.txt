@@ -1,0 +1,14 @@
+# Vaahan Tracker Dependencies
+
+# Browser automation
+playwright>=1.44.0
+
+# Data processing
+pandas>=2.1.0
+pyarrow>=14.0.0    # For parquet support
+
+# Config
+pyyaml>=6.0
+
+# Optional: Use polars for faster processing on large datasets
+# polars>=0.20.0

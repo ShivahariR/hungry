@@ -1,0 +1,68 @@
+# Vaahan Tracker Configuration
+
+scraper:
+  base_url: "https://vahan.parivahan.gov.in/vahan4dashboard/"
+  dashboard_url: "https://vahan.parivahan.gov.in/vahan4dashboard/vahan/view/reportview.xhtml"
+  # Months to scrape: FY24 (Apr-2023 to Mar-2024) + FY25 (Apr-2024 to Mar-2025) + FY26 ongoing
+  start_month: "2023-04"
+  end_month: "2026-03"
+  # Always re-scrape last N months for data revisions
+  rescrape_last_months: 2
+  # Anti-bot settings
+  min_delay_seconds: 2
+  max_delay_seconds: 5
+  page_load_timeout_ms: 60000
+  max_retries: 3
+  retry_backoff_base: 2
+  headless: true
+  # Manual intervention fallback for captchas
+  captcha_manual_mode: false
+
+vehicle_categories:
+  - "TWO WHEELER"
+  - "THREE WHEELER"
+  - "FOUR WHEELER (PASSENGER)"
+  - "FOUR WHEELER (GOODS)"
+  - "SPECIAL VEHICLE"
+  - "ADAPTED VEHICLE"
+
+# Category display name mapping
+category_display_names:
+  "TWO WHEELER": "Two Wheelers"
+  "THREE WHEELER": "Three Wheelers"
+  "FOUR WHEELER (PASSENGER)": "Passenger Vehicles"
+  "FOUR WHEELER (GOODS)": "Commercial Vehicles"
+  "SPECIAL VEHICLE": "Special Vehicles"
+  "ADAPTED VEHICLE": "Adapted Vehicles"
+
+fuel_types:
+  - "PETROL"
+  - "DIESEL"
+  - "CNG ONLY"
+  - "LPG ONLY"
+  - "ELECTRIC(BOV)"
+  - "PETROL/HYBRID"
+  - "DIESEL/HYBRID"
+  - "SOLAR"
+  - "OTHERS"
+
+ev_fuel_types:
+  - "ELECTRIC(BOV)"
+
+paths:
+  raw_data: "data/raw"
+  clean_data: "data/clean"
+  output_data: "data/output"
+
+# Scheduler
+scheduler:
+  # Vaahan data typically updates by 10th-15th of following month
+  cron_day_of_month: 16
+  cron_hour: 6
+  cron_minute: 0
+
+# Notifications (optional)
+notifications:
+  slack_webhook_url: ""
+  telegram_bot_token: ""
+  telegram_chat_id: ""

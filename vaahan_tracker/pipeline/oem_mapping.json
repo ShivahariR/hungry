@@ -1,0 +1,463 @@
+{
+  "oem_mappings": {
+    "MARUTI SUZUKI INDIA LTD": {
+      "normalized": "Maruti Suzuki",
+      "ticker": "MARUTI",
+      "listed": true,
+      "categories": ["Passenger Vehicles"],
+      "color": "#2563eb"
+    },
+    "MARUTI SUZUKI INDIA LIMITED": {
+      "normalized": "Maruti Suzuki",
+      "ticker": "MARUTI",
+      "listed": true,
+      "categories": ["Passenger Vehicles"],
+      "color": "#2563eb"
+    },
+    "TATA MOTORS LTD": {
+      "normalized": "Tata Motors",
+      "ticker": "TATAMOTORS",
+      "listed": true,
+      "categories": ["Passenger Vehicles", "Commercial Vehicles"],
+      "color": "#1d4ed8"
+    },
+    "TATA MOTORS LIMITED": {
+      "normalized": "Tata Motors",
+      "ticker": "TATAMOTORS",
+      "listed": true,
+      "categories": ["Passenger Vehicles", "Commercial Vehicles"],
+      "color": "#1d4ed8"
+    },
+    "MAHINDRA & MAHINDRA LTD": {
+      "normalized": "Mahindra",
+      "ticker": "M&M",
+      "listed": true,
+      "categories": ["Passenger Vehicles", "Commercial Vehicles", "Three Wheelers"],
+      "color": "#dc2626"
+    },
+    "MAHINDRA & MAHINDRA LIMITED": {
+      "normalized": "Mahindra",
+      "ticker": "M&M",
+      "listed": true,
+      "categories": ["Passenger Vehicles", "Commercial Vehicles", "Three Wheelers"],
+      "color": "#dc2626"
+    },
+    "MAHINDRA LAST MILE MOBILITY LTD": {
+      "normalized": "Mahindra Last Mile",
+      "ticker": "M&M",
+      "listed": true,
+      "categories": ["Three Wheelers"],
+      "color": "#dc2626"
+    },
+    "HYUNDAI MOTOR INDIA LTD": {
+      "normalized": "Hyundai",
+      "ticker": "HYUNDAI",
+      "listed": true,
+      "categories": ["Passenger Vehicles"],
+      "color": "#0891b2"
+    },
+    "HYUNDAI MOTOR INDIA LIMITED": {
+      "normalized": "Hyundai",
+      "ticker": "HYUNDAI",
+      "listed": true,
+      "categories": ["Passenger Vehicles"],
+      "color": "#0891b2"
+    },
+    "KIA INDIA PVT LTD": {
+      "normalized": "Kia",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Passenger Vehicles"],
+      "color": "#059669"
+    },
+    "KIA MOTORS INDIA PVT LTD": {
+      "normalized": "Kia",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Passenger Vehicles"],
+      "color": "#059669"
+    },
+    "TOYOTA KIRLOSKAR MOTOR PVT LTD": {
+      "normalized": "Toyota",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Passenger Vehicles"],
+      "color": "#b91c1c"
+    },
+    "TOYOTA KIRLOSKAR MOTOR": {
+      "normalized": "Toyota",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Passenger Vehicles"],
+      "color": "#b91c1c"
+    },
+    "MG MOTOR INDIA PVT LTD": {
+      "normalized": "MG Motor",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Passenger Vehicles"],
+      "color": "#7c3aed"
+    },
+    "SKODA AUTO INDIA PVT LTD": {
+      "normalized": "Skoda",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Passenger Vehicles"],
+      "color": "#16a34a"
+    },
+    "VOLKSWAGEN INDIA PVT LTD": {
+      "normalized": "Volkswagen",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Passenger Vehicles"],
+      "color": "#1e40af"
+    },
+    "HONDA CARS INDIA LTD": {
+      "normalized": "Honda Cars",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Passenger Vehicles"],
+      "color": "#e11d48"
+    },
+    "RENAULT INDIA PVT LTD": {
+      "normalized": "Renault",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Passenger Vehicles"],
+      "color": "#f59e0b"
+    },
+    "CITROEN": {
+      "normalized": "Citroen",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Passenger Vehicles"],
+      "color": "#6366f1"
+    },
+    "ASHOK LEYLAND LTD": {
+      "normalized": "Ashok Leyland",
+      "ticker": "ASHOKLEY",
+      "listed": true,
+      "categories": ["Commercial Vehicles"],
+      "color": "#ea580c"
+    },
+    "ASHOK LEYLAND LIMITED": {
+      "normalized": "Ashok Leyland",
+      "ticker": "ASHOKLEY",
+      "listed": true,
+      "categories": ["Commercial Vehicles"],
+      "color": "#ea580c"
+    },
+    "VECV": {
+      "normalized": "Eicher (VECV)",
+      "ticker": "EICHERMOT",
+      "listed": true,
+      "categories": ["Commercial Vehicles"],
+      "color": "#a16207"
+    },
+    "EICHER MOTORS LTD": {
+      "normalized": "Eicher (VECV)",
+      "ticker": "EICHERMOT",
+      "listed": true,
+      "categories": ["Commercial Vehicles"],
+      "color": "#a16207"
+    },
+    "VE COMMERCIAL VEHICLES LTD": {
+      "normalized": "Eicher (VECV)",
+      "ticker": "EICHERMOT",
+      "listed": true,
+      "categories": ["Commercial Vehicles"],
+      "color": "#a16207"
+    },
+    "FORCE MOTORS LTD": {
+      "normalized": "Force Motors",
+      "ticker": "FORCEMOT",
+      "listed": true,
+      "categories": ["Commercial Vehicles"],
+      "color": "#0d9488"
+    },
+    "SML ISUZU LTD": {
+      "normalized": "SML Isuzu",
+      "ticker": "SMLISUZU",
+      "listed": true,
+      "categories": ["Commercial Vehicles"],
+      "color": "#4f46e5"
+    },
+    "SML ISUZU LIMITED": {
+      "normalized": "SML Isuzu",
+      "ticker": "SMLISUZU",
+      "listed": true,
+      "categories": ["Commercial Vehicles"],
+      "color": "#4f46e5"
+    },
+    "OLECTRA GREENTECH LTD": {
+      "normalized": "Olectra",
+      "ticker": "OLECTRA",
+      "listed": true,
+      "categories": ["Commercial Vehicles"],
+      "color": "#65a30d"
+    },
+    "OLECTRA GREENTECH LIMITED": {
+      "normalized": "Olectra",
+      "ticker": "OLECTRA",
+      "listed": true,
+      "categories": ["Commercial Vehicles"],
+      "color": "#65a30d"
+    },
+    "DAIMLER INDIA COMMERCIAL VEHICLES PVT LTD": {
+      "normalized": "Daimler India",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Commercial Vehicles"],
+      "color": "#475569"
+    },
+    "BHARAT BENZ": {
+      "normalized": "BharatBenz",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Commercial Vehicles"],
+      "color": "#475569"
+    },
+    "HERO MOTOCORP LTD": {
+      "normalized": "Hero MotoCorp",
+      "ticker": "HEROMOTOCO",
+      "listed": true,
+      "categories": ["Two Wheelers"],
+      "color": "#dc2626"
+    },
+    "HERO MOTOCORP LIMITED": {
+      "normalized": "Hero MotoCorp",
+      "ticker": "HEROMOTOCO",
+      "listed": true,
+      "categories": ["Two Wheelers"],
+      "color": "#dc2626"
+    },
+    "HONDA MOTORCYCLE AND SCOOTER INDIA PVT LTD": {
+      "normalized": "Honda 2W",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Two Wheelers"],
+      "color": "#e11d48"
+    },
+    "HONDA MOTORCYCLE & SCOOTER INDIA PVT LTD": {
+      "normalized": "Honda 2W",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Two Wheelers"],
+      "color": "#e11d48"
+    },
+    "TVS MOTOR COMPANY LTD": {
+      "normalized": "TVS Motor",
+      "ticker": "TVSMOTOR",
+      "listed": true,
+      "categories": ["Two Wheelers", "Three Wheelers"],
+      "color": "#2563eb"
+    },
+    "TVS MOTOR COMPANY LIMITED": {
+      "normalized": "TVS Motor",
+      "ticker": "TVSMOTOR",
+      "listed": true,
+      "categories": ["Two Wheelers", "Three Wheelers"],
+      "color": "#2563eb"
+    },
+    "BAJAJ AUTO LTD": {
+      "normalized": "Bajaj Auto",
+      "ticker": "BAJAJ-AUTO",
+      "listed": true,
+      "categories": ["Two Wheelers", "Three Wheelers"],
+      "color": "#1d4ed8"
+    },
+    "BAJAJ AUTO LIMITED": {
+      "normalized": "Bajaj Auto",
+      "ticker": "BAJAJ-AUTO",
+      "listed": true,
+      "categories": ["Two Wheelers", "Three Wheelers"],
+      "color": "#1d4ed8"
+    },
+    "ROYAL ENFIELD": {
+      "normalized": "Royal Enfield",
+      "ticker": "EICHERMOT",
+      "listed": true,
+      "categories": ["Two Wheelers"],
+      "color": "#a16207"
+    },
+    "EICHER MOTORS LIMITED": {
+      "normalized": "Royal Enfield",
+      "ticker": "EICHERMOT",
+      "listed": true,
+      "categories": ["Two Wheelers"],
+      "color": "#a16207"
+    },
+    "SUZUKI MOTORCYCLE INDIA PVT LTD": {
+      "normalized": "Suzuki 2W",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Two Wheelers"],
+      "color": "#0891b2"
+    },
+    "YAMAHA MOTOR INDIA PVT LTD": {
+      "normalized": "Yamaha",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Two Wheelers"],
+      "color": "#7c3aed"
+    },
+    "OLA ELECTRIC TECHNOLOGIES PVT LTD": {
+      "normalized": "Ola Electric",
+      "ticker": "OLAELEC",
+      "listed": true,
+      "categories": ["Two Wheelers"],
+      "color": "#65a30d",
+      "ev_pure_play": true
+    },
+    "OLA ELECTRIC": {
+      "normalized": "Ola Electric",
+      "ticker": "OLAELEC",
+      "listed": true,
+      "categories": ["Two Wheelers"],
+      "color": "#65a30d",
+      "ev_pure_play": true
+    },
+    "ATHER ENERGY PVT LTD": {
+      "normalized": "Ather Energy",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Two Wheelers"],
+      "color": "#059669",
+      "ev_pure_play": true
+    },
+    "ATHER ENERGY": {
+      "normalized": "Ather Energy",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Two Wheelers"],
+      "color": "#059669",
+      "ev_pure_play": true
+    },
+    "BYD INDIA PVT LTD": {
+      "normalized": "BYD",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Passenger Vehicles"],
+      "color": "#be185d",
+      "ev_pure_play": true
+    },
+    "BYD AUTO INDUSTRY COMPANY LIMITED": {
+      "normalized": "BYD",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Passenger Vehicles"],
+      "color": "#be185d",
+      "ev_pure_play": true
+    },
+    "PIAGGIO VEHICLES PVT LTD": {
+      "normalized": "Piaggio",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Three Wheelers"],
+      "color": "#16a34a"
+    },
+    "PIAGGIO VEHICLES PVT. LTD.": {
+      "normalized": "Piaggio",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Three Wheelers"],
+      "color": "#16a34a"
+    },
+    "KINETIC GREEN ENERGY & POWER SOLUTIONS LTD": {
+      "normalized": "Kinetic Green",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Three Wheelers"],
+      "color": "#22c55e",
+      "ev_pure_play": true
+    },
+    "YC ELECTRIC VEHICLE": {
+      "normalized": "YC Electric",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Three Wheelers"],
+      "color": "#84cc16",
+      "ev_pure_play": true
+    },
+    "REVOLT MOTORS": {
+      "normalized": "Revolt",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Two Wheelers"],
+      "color": "#f97316",
+      "ev_pure_play": true
+    },
+    "REVOLT INTELLICORP PVT LTD": {
+      "normalized": "Revolt",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Two Wheelers"],
+      "color": "#f97316",
+      "ev_pure_play": true
+    },
+    "AMPERE VEHICLES PVT LTD": {
+      "normalized": "Ampere (Greaves)",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Two Wheelers"],
+      "color": "#0ea5e9",
+      "ev_pure_play": true
+    },
+    "JITENDRA NEW EV TECH PVT LTD": {
+      "normalized": "Jitendra EV",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Two Wheelers", "Three Wheelers"],
+      "color": "#14b8a6",
+      "ev_pure_play": true
+    },
+    "BGAUSS": {
+      "normalized": "BGauss",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Two Wheelers"],
+      "color": "#8b5cf6",
+      "ev_pure_play": true
+    },
+    "OKINAWA AUTOTECH PVT LTD": {
+      "normalized": "Okinawa",
+      "ticker": null,
+      "listed": false,
+      "categories": ["Two Wheelers"],
+      "color": "#ec4899",
+      "ev_pure_play": true
+    }
+  },
+  "ticker_consolidation": {
+    "TATAMOTORS": {
+      "display_pv": "Tata Motors (PV)",
+      "display_cv": "Tata Motors (CV)",
+      "display_ev": "Tata Motors (EV)"
+    },
+    "M&M": {
+      "display_pv": "Mahindra (PV)",
+      "display_cv": "Mahindra (CV)",
+      "display_ev": "Mahindra (EV)"
+    },
+    "EICHERMOT": {
+      "display_2w": "Royal Enfield",
+      "display_cv": "Eicher (VECV)"
+    },
+    "BAJAJ-AUTO": {
+      "display_2w": "Bajaj Auto (2W)",
+      "display_3w": "Bajaj Auto (3W)"
+    },
+    "TVSMOTOR": {
+      "display_2w": "TVS Motor (2W)",
+      "display_3w": "TVS Motor (3W)"
+    }
+  },
+  "category_mapping": {
+    "TWO WHEELER": "Two Wheelers",
+    "THREE WHEELER": "Three Wheelers",
+    "FOUR WHEELER (PASSENGER)": "Passenger Vehicles",
+    "FOUR WHEELER (GOODS)": "Commercial Vehicles",
+    "SPECIAL VEHICLE": "Special Vehicles",
+    "ADAPTED VEHICLE": "Adapted Vehicles"
+  }
+}
