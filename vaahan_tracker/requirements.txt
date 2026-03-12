@@ -1,7 +1,7 @@
 # Vaahan Tracker Dependencies
 
 # Browser automation
-playwright>=1.44.0
+playwright>=1.44.0,<1.57.0
 
 # Data processing
 pandas>=2.1.0
