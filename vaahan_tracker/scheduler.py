@@ -16,7 +16,6 @@ Crontab entry:
 Or use systemd timer, AWS Lambda, GCP Cloud Functions, etc.
 """
 
-import asyncio
 import json
 import logging
 import sys
@@ -128,7 +127,7 @@ def notify(config: dict, message: str) -> None:
         )
 
 
-async def run_scheduled() -> None:
+def run_scheduled() -> None:
     """Run the full scheduled pipeline."""
     config = load_config()
 
@@ -142,7 +141,7 @@ async def run_scheduled() -> None:
     # 1. Scrape
     from scraper.vaahan_scraper import VaahanScraper
     scraper = VaahanScraper(config)
-    raw_data = await scraper.scrape_all()
+    raw_data = scraper.scrape_all()
 
     if not raw_data:
         msg = f"Vaahan Tracker: No data scraped for {start_range} to {end_range}"
@@ -212,7 +211,7 @@ def main():
         export_main()
     else:
         # Scheduled incremental run
-        asyncio.run(run_scheduled())
+        run_scheduled()
 
 
 if __name__ == "__main__":

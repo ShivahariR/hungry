@@ -35,6 +35,24 @@ category_display_names:
   "SPECIAL VEHICLE": "Special Vehicles"
   "ADAPTED VEHICLE": "Adapted Vehicles"
 
+# Whether to scrape only All-India aggregate (faster) or per-state
+all_india_only: true
+# states: ["DELHI", "MAHARASHTRA"]  # uncomment to scrape specific states
+
+# X-Axis / Y-Axis combinations to scrape from the dashboard
+# The dashboard lets you pick what goes on each axis of the data table
+scrape_axes:
+  - x_axis: "Month Wise"
+    y_axis: "Maker"
+  # Uncomment for additional breakdowns:
+  # - x_axis: "Fuel"
+  #   y_axis: "Maker"
+  # - x_axis: "Vehicle Category"
+  #   y_axis: "Maker"
+
+# Wait time (seconds) after clicking Refresh for AJAX table to load
+table_load_wait: 5
+
 fuel_types:
   - "PETROL"
   - "DIESEL"
