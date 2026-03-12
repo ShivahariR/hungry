@@ -1,0 +1,18 @@
+[
+  {
+    "url": "https://vahan.parivahan.gov.in/vahan4dashboard/",
+    "method": "GET",
+    "post_data": null,
+    "response_status": 407,
+    "content_type": "",
+    "response_preview": null
+  },
+  {
+    "url": "https://vahan.parivahan.gov.in/vahan4dashboard/vahan/view/reportview.xhtml",
+    "method": "GET",
+    "post_data": null,
+    "response_status": 407,
+    "content_type": "",
+    "response_preview": null
+  }
+]
