@@ -11,11 +11,18 @@ Cleans and normalizes raw scraped registration data:
 import csv
 import json
 import logging
+import sys
 from pathlib import Path
 
 import pandas as pd
 
-from pipeline.ev_classifier import classify_ev
+# Support running both as a module (`python -m pipeline.vaahan_pipeline`)
+# and as a script (`python pipeline/vaahan_pipeline.py`)
+try:
+    from pipeline.ev_classifier import classify_ev
+except ModuleNotFoundError:
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+    from pipeline.ev_classifier import classify_ev
 
 logger = logging.getLogger(__name__)
 

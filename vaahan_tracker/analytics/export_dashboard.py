@@ -21,16 +21,26 @@ Output contract:
 
 import json
 import logging
+import sys
 from datetime import date
 from pathlib import Path
 
 import pandas as pd
 
-from analytics.vaahan_analytics import (
-    compute_all_analytics,
-    load_clean_data,
-    month_to_fy,
-)
+# Support running both as a module and as a script
+try:
+    from analytics.vaahan_analytics import (
+        compute_all_analytics,
+        load_clean_data,
+        month_to_fy,
+    )
+except ModuleNotFoundError:
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+    from analytics.vaahan_analytics import (
+        compute_all_analytics,
+        load_clean_data,
+        month_to_fy,
+    )
 
 logger = logging.getLogger(__name__)
 

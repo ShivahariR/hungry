@@ -200,8 +200,12 @@ def main():
     if "--full" in sys.argv:
         # Full historical scrape (uses config.yaml start/end dates)
         logger.info("Running full historical scrape...")
-        from scraper.vaahan_scraper import main as scraper_main
-        scraper_main()
+        try:
+            from scraper.vaahan_scraper import main as scraper_main
+            scraper_main()
+        except Exception as e:
+            logger.error(f"Scraper failed: {e}")
+            logger.info("Continuing with pipeline using existing raw data...")
         from pipeline.vaahan_pipeline import main as pipeline_main
         pipeline_main()
         from analytics.export_dashboard import main as export_main

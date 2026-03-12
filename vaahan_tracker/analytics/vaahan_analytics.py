@@ -15,10 +15,15 @@ Metrics computed:
 """
 
 import logging
+import sys
 from pathlib import Path
 
 import pandas as pd
 import numpy as np
+
+# Support running both as a module and as a script
+if __name__ == "__main__":
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 logger = logging.getLogger(__name__)
 

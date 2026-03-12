@@ -12,7 +12,10 @@ import logging
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from playwright.async_api import Page, Request, Response
+try:
+    from playwright.async_api import Page, Request, Response
+except ImportError:
+    Page = Request = Response = None
 
 logger = logging.getLogger(__name__)
 

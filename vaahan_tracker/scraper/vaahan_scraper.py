@@ -25,10 +25,17 @@ import yaml
 try:
     from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeout
 except ImportError:
-    print("Playwright not installed. Run: pip install playwright && playwright install chromium")
-    sys.exit(1)
+    async_playwright = None
+    PlaywrightTimeout = TimeoutError
+    logging.getLogger(__name__).warning(
+        "Playwright not installed. Run: pip install playwright && playwright install chromium"
+    )
 
-from scraper.network_interceptor import NetworkInterceptor
+try:
+    from scraper.network_interceptor import NetworkInterceptor
+except ModuleNotFoundError:
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+    from scraper.network_interceptor import NetworkInterceptor
 
 logger = logging.getLogger(__name__)
 
@@ -82,6 +89,8 @@ class VaahanScraper:
 
     async def scrape_all(self) -> list[dict]:
         """Main entry point: scrape all configured months."""
+        if async_playwright is None:
+            raise RuntimeError("Playwright is not installed. Run: pip install playwright && playwright install chromium")
         months = generate_month_range(
             self.scraper_cfg["start_month"],
             self.scraper_cfg["end_month"],
@@ -476,6 +485,8 @@ class VaahanAPIClient:
 
     async def discover_endpoints(self) -> dict | None:
         """Use a headless browser session to discover API endpoints."""
+        if async_playwright is None:
+            raise RuntimeError("Playwright is not installed. Run: pip install playwright && playwright install chromium")
         interceptor = NetworkInterceptor()
         async with async_playwright() as p:
             browser = await p.chromium.launch(headless=True)
@@ -539,7 +550,11 @@ async def run_scraper() -> list[dict]:
     # First try API discovery
     logger.info("Attempting API endpoint discovery...")
     api_client = VaahanAPIClient(config)
-    endpoints = await api_client.discover_endpoints()
+    try:
+        endpoints = await api_client.discover_endpoints()
+    except Exception as e:
+        logger.warning(f"API endpoint discovery failed: {e}")
+        endpoints = None
 
     if endpoints:
         logger.info("API endpoints found — saving for future direct access")
