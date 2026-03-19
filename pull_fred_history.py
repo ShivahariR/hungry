@@ -4,9 +4,9 @@ US Recession Probability Simulator — FRED Historical Data Pull
 Pulls 10 years of historical data for all indicators needed to
 calibrate the MiroFish multi-agent recession simulation.
 SETUP:
-  pip install fredapi pandas
+  pip install fredapi pandas python-dotenv
   Get free FRED API key: https://fred.stlouisfed.org/docs/api/api_key.html
-  Export: export FRED_API_KEY=your_key_here
+  Add to .env file: FRED_API_KEY=your_key_here
 USAGE:
   python pull_fred_history.py
   # Outputs: fred_historical_data.parquet, fred_historical_data.csv
@@ -18,10 +18,16 @@ import time
 from datetime import datetime, timedelta
 
 try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass  # dotenv optional if env vars set directly
+
+try:
     from fredapi import Fred
     import pandas as pd
 except ImportError:
-    print("Install required packages: pip install fredapi pandas pyarrow")
+    print("Install required packages: pip install fredapi pandas python-dotenv pyarrow")
     sys.exit(1)
 
 FRED_API_KEY = os.environ.get("FRED_API_KEY", "YOUR_KEY_HERE")
